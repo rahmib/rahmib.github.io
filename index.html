@@ -1,1 +1,480 @@
-efgegeg
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — BUT Informatique</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <span class="nav-logo" onclick="showPage('home')">Portfolio</span>
+  <div class="nav-links">
+    <a id="nav-home"         onclick="showPage('home')">Accueil</a>
+    <a id="nav-projets"      onclick="showPage('projets')">Projets</a>
+    <a id="nav-competences"  onclick="showPage('competences')">Compétences</a>
+    <a id="nav-contact"      onclick="showPage('contact')">Contact</a>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════════ -->
+<!--              PAGE ACCUEIL                   -->
+<!-- ════════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section id="section-hero">
+    <div class="wrap">
+      <div class="hero-tag">BUT Informatique — Université Grenoble Alpes</div>
+      <h1>Étudiant<br><span>développeur</span><br>& passionné.</h1>
+      <p class="hero-desc">
+        Bienvenue sur mon portfolio. Je suis étudiant en BUT Informatique et je développe des compétences concrètes à travers des projets variés : développement logiciel en Java, administration système sous Linux, bases de données PostgreSQL et création de sites web en HTML/CSS.
+      </p>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- APERÇU 3 PROJETS -->
+  <section id="section-projets" class="home-section">
+    <div class="wrap">
+      <div class="home-section-header">
+        <div class="label">Mes réalisations</div>
+        <h2>Projets <span>récents</span></h2>
+      </div>
+
+      <div class="grid3">
+
+        <div class="card">
+          <div class="card-bar" style="background:linear-gradient(90deg,var(--a1),#ffaa00);"></div>
+          <div class="card-sae"></div>
+          <h3>Chatbot de culture générale</h3>
+          <p>Chatbot en Java basé sur un index et un thésaurus pour répondre à des questions de culture générale le plus rapidement possible.</p>
+          <div class="tags">
+            <span class="tag" style="color:var(--a1);">Java</span>
+            <span class="tag">Index</span>
+            <span class="tag">Dichotomie</span>
+          </div>
+          <div class="card-foot"><span>👥 2 pers.</span><span>⏱ 3,5 jours</span></div>
+        </div>
+
+        <div class="card">
+          <div class="card-bar" style="background:linear-gradient(90deg,var(--a3),#4a9eff);"></div>
+          <div class="card-sae"></div>
+          <h3>Installation d'un poste de développement</h3>
+          <p>Mise en place d'un environnement de dev sous Debian 13 avec KDE et installation d'IntelliJ IDEA via 3 méthodes distinctes.</p>
+          <div class="tags">
+            <span class="tag" style="color:var(--a3);">Debian 13</span>
+            <span class="tag">Snap</span>
+            <span class="tag">Flatpak</span>
+          </div>
+          <div class="card-foot"><span>👤 Seul</span><span>⏱ 3h</span></div>
+        </div>
+
+        <div class="card">
+          <div class="card-bar" style="background:linear-gradient(90deg,var(--a2),#ff9a6b);"></div>
+          <div class="card-sae"></div>
+          <h3>Création d'une base de données</h3>
+          <p>BDD relationnelle pour une association : modélisation MCD/MLD, création de tables, contraintes et requêtes SQL avancées.</p>
+          <div class="tags">
+            <span class="tag" style="color:var(--a2);">PostgreSQL</span>
+            <span class="tag">DBeaver</span>
+            <span class="tag">SQL</span>
+          </div>
+          <div class="card-foot"><span>👥 3 pers.</span><span>⏱ Plusieurs séances</span></div>
+        </div>
+
+      </div>
+
+      <button class="voir-tout" onclick="showPage('projets')">
+        Voir tous mes projets <span class="arrow">→</span>
+      </button>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- APERÇU 3 COMPÉTENCES -->
+  <section id="section-competences" class="home-section">
+    <div class="wrap">
+      <div class="home-section-header">
+        <div class="label">Référentiel BUT</div>
+        <h2>Compétences <span>clés</span></h2>
+      </div>
+
+      <div class="grid3">
+
+        <div class="comp-card" style="border-color:#f7c94828;">
+          <div class="comp-num">Compétence 1</div>
+          <div class="comp-icon" style="background:#f7c94818;">💻</div>
+          <h3>Réaliser un développement d'application</h3>
+          <p>Concevoir, coder, tester et intégrer une solution informatique pour un client.</p>
+          <div class="pills">
+            <span class="pill" style="background:#f7c94820;color:var(--a1);">Java</span>
+            <span class="pill" style="background:#f7c94820;color:var(--a1);">HTML/CSS</span>
+            <span class="pill" style="background:#f7c94820;color:var(--a1);">Algorithmes</span>
+          </div>
+          <span class="sae-badge"></span>
+        </div>
+
+        <div class="comp-card" style="border-color:#ff6b6b28;">
+          <div class="comp-num">Compétence 3</div>
+          <div class="comp-icon" style="background:#ff6b6b18;">🖥️</div>
+          <h3>Administrer des systèmes informatiques communicants</h3>
+          <p>Installer, configurer et maintenir en conditions opérationnelles des infrastructures.</p>
+          <div class="pills">
+            <span class="pill" style="background:#ff6b6b20;color:var(--a2);">Debian 13</span>
+            <span class="pill" style="background:#ff6b6b20;color:var(--a2);">Linux</span>
+            <span class="pill" style="background:#ff6b6b20;color:var(--a2);">JDK / Git</span>
+          </div>
+          <span class="sae-badge"></span>
+        </div>
+
+        <div class="comp-card" style="border-color:#a8ff7828;">
+          <div class="comp-num">Compétence 4</div>
+          <div class="comp-icon" style="background:#a8ff7818;">🗄️</div>
+          <h3>Gérer des données de l'information</h3>
+          <p>Concevoir et exploiter des bases de données relationnelles pour piloter une organisation.</p>
+          <div class="pills">
+            <span class="pill" style="background:#a8ff7820;color:var(--a4);">PostgreSQL</span>
+            <span class="pill" style="background:#a8ff7820;color:var(--a4);">MCD/MLD</span>
+            <span class="pill" style="background:#a8ff7820;color:var(--a4);">SQL</span>
+          </div>
+          <span class="sae-badge"></span>
+        </div>
+
+      </div>
+
+      <button class="voir-tout" onclick="showPage('competences')">
+        Voir toutes mes compétences <span class="arrow">→</span>
+      </button>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- CONTACT MINI SUR ACCUEIL -->
+  <section id="section-contact" class="home-section">
+    <div class="wrap">
+      <div class="home-section-header">
+        <div class="label">Me joindre</div>
+        <h2>Me <span>contacter</span></h2>
+      </div>
+
+      <div class="contact-mini">
+
+        <a href="mailto:bouchra.rahmi@etu.univ-grenoble-alpes.fr" class="ci">
+          <div class="ci-ico" style="background:#f7c94818;">✉️</div>
+          <div><strong>Email</strong><span>bouchra.rahmi@etu.univ-grenoble-alpes.fr</span></div>
+        </a>
+
+   
+        <div class="ci" style="cursor:default;">
+          <div class="ci-ico" style="background:#c084fc18;">📍</div>
+          <div><strong>Localisation</strong><span>Grenoble, France</span></div>
+        </div>
+
+      </div>
+
+      <button class="voir-tout" onclick="showPage('contact')" style="margin-top:1.2rem;">
+        M'envoyer un message <span class="arrow">→</span>
+      </button>
+    </div>
+  </section>
+
+  <footer>Portfolio BUT Informatique — Fait par Rahmi Bouchra</footer>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!--              PAGE TOUS LES PROJETS          -->
+<!-- ════════════════════════════════════════════ -->
+<div class="page" id="page-projets">
+  <div class="full-page">
+    <div class="wrap">
+      <button class="back-btn" onclick="showPage('home')">← Retour à l'accueil</button>
+      <div class="label">Toutes mes réalisations</div>
+      <h1>Tous mes <span>Projets</span></h1>
+      <p class="sub">Projets réalisées en BUT Informatique — chaque projet correspond à une situation professionnelle réelle.</p>
+
+      <div class="grid-all">
+
+        <div class="card">
+          <div class="card-bar" style="background:linear-gradient(90deg,var(--a1),#ffaa00);"></div>
+          <div class="card-sae"></div>
+          <h3>Chatbot de culture générale</h3>
+          <p>Création d'un chatbot rapide et fiable basé sur un index et un thésaurus pour répondre à des questions de culture générale. L'objectif était d'optimiser la fiabilité des réponses et la vitesse de recherche.</p>
+          <div class="tags">
+            <span class="tag" style="color:var(--a1);">Java</span>
+            <span class="tag">Algorithmes</span>
+            <span class="tag">Index</span>
+            <span class="tag">Dichotomie</span>
+            <span class="tag">Thésaurus</span>
+          </div>
+          <div class="dbox"><strong>Ce que j'ai appris</strong>Implémenter des fonctions de recherche dichotomique, déboguer une intégration complexe et créer des tests manuels pour isoler les erreurs.</div>
+          <div class="dbox blue" style="margin-top:0.5rem;"><strong>Mon rôle</strong>J'ai développé le thésaurus, l'index et les fonctions dichotomiques. Face à un bug d'intégration bloquant tout, j'ai créé un main de test pour isoler et corriger l'erreur.</div>
+          <div class="card-foot"><span>👥 2 personnes</span><span>⏱ 3,5 jours</span><span>🏷 Développement</span></div>
+        </div>
+
+        <div class="card">
+          <div class="card-bar" style="background:linear-gradient(90deg,var(--a3),#4a9eff);"></div>
+          <div class="card-sae"></div>
+          <h3>Installation d'un poste de développement</h3>
+          <p>Mise en place complète d'un environnement de développement sous Debian 13 avec KDE/Plasma. Installation d'IntelliJ IDEA via 3 méthodes différentes et production d'une carte mentale de la procédure.</p>
+          <div class="tags">
+            <span class="tag" style="color:var(--a3);">Debian 13</span>
+            <span class="tag">KDE/Plasma</span>
+            <span class="tag">Snap</span>
+            <span class="tag">Flatpak</span>
+            <span class="tag">Archive</span>
+            <span class="tag">JDK / Git</span>
+          </div>
+          <div class="dbox"><strong>Ce que j'ai appris</strong>Différentes méthodes d'installation sous Linux, gestion des paquets, configuration d'un OS pour le développement et importance de la documentation procédurale.</div>
+          <div class="dbox blue" style="margin-top:0.5rem;"><strong>Mon rôle</strong>Travail individuel rigoureux : captures d'écran à chaque étape, installation selon trois méthodes distinctes, en respectant précisément la liste des contraintes données.</div>
+          <div class="card-foot"><span>👤 Seul</span><span>⏱ 3h éval finale</span><span>🏷 Sysadmin</span></div>
+        </div>
+
+        <div class="card">
+          <div class="card-bar" style="background:linear-gradient(90deg,var(--a2),#ff9a6b);"></div>
+          <div class="card-sae"></div>
+          <h3>Création d'une base de données</h3>
+          <p>Conception et implémentation d'une BDD relationnelle pour une association organisant des sorties : modélisation, tables, contraintes et requêtes SQL avancées.</p>
+          <div class="tags">
+            <span class="tag" style="color:var(--a2);">PostgreSQL</span>
+            <span class="tag">DBeaver</span>
+            <span class="tag">MCD / MLD</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Clés étrangères</span>
+            <span class="tag">Contraintes</span>
+          </div>
+          <div class="dbox"><strong>Ce que j'ai appris</strong>Modéliser des données complexes avec cardinalités, créer des tables relationnelles et écrire des requêtes de mise à jour avec des contraintes précises.</div>
+          <div class="dbox blue" style="margin-top:0.5rem;"><strong>Mon rôle</strong>Réalisation du MCD/MLD, création de tables avec clés primaires et étrangères. Dans la troisième partie, j'ai développé la section contraintes et l'ai expliquée à mes camarades.</div>
+          <div class="card-foot"><span>👥 3 personnes</span><span>⏱ Plusieurs séances</span><span>🏷 Base de données</span></div>
+        </div>
+
+        <div class="card">
+          <div class="card-bar" style="background:linear-gradient(90deg,var(--a4),#3ecf8e);"></div>
+          <div class="card-sae"></div>
+          <h3>Découverte de l'environnement économique — Capgemini</h3>
+          <p>Recueil de besoins et création d'un site web annexe présentant Capgemini à des élèves de 3ème, avec un langage simplifié, une charte commune et un code partagé commenté.</p>
+          <div class="tags">
+            <span class="tag" style="color:var(--a4);">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Word</span>
+            <span class="tag">Google Drive</span>
+            <span class="tag">Docs</span>
+          </div>
+          <div class="dbox"><strong>Ce que j'ai appris</strong>Vulgariser un contenu technique pour un public non-initié, travailler avec un CSS partagé entre plusieurs développeurs, utiliser le positionnement absolu CSS pour des effets créatifs.</div>
+          <div class="dbox blue" style="margin-top:0.5rem;"><strong>Mon rôle</strong>Recherche et vulgarisation des secteurs d'activité de Capgemini. Développement d'une page avec positionnement CSS absolu et pourcentages pour placer les images de façon créative.</div>
+          <div class="card-foot"><span>👥 5 personnes</span><span>⏱ Semestre entier</span><span>🏷 Web & Projet</span></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer>Portfolio BUT Informatique — Fait par Bouchra Rahmi</footer>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!--           PAGE TOUTES LES COMPÉTENCES       -->
+<!-- ════════════════════════════════════════════ -->
+<div class="page" id="page-competences">
+  <div class="full-page">
+    <div class="wrap">
+      <button class="back-btn" onclick="showPage('home')">← Retour à l'accueil</button>
+      <div class="label">Référentiel BUT Informatique</div>
+      <h1>Toutes mes <span>Compétences</span></h1>
+      <p class="sub">Les 6 compétences officielles du BUT Informatique — travaillées à travers mes SAÉ.</p>
+
+      <div class="grid-all">
+
+        <div class="comp-card" style="border-color:#f7c94828;">
+          <div class="comp-num">Compétence 1</div>
+          <div class="comp-icon" style="background:#f7c94818;">💻</div>
+          <h3>Réaliser un développement d'application</h3>
+          <p>Concevoir, coder, tester et intégrer une solution informatique pour un client, en appliquant les principes algorithmiques et les bonnes pratiques de développement logiciel.</p>
+          <div class="pills">
+            <span class="pill" style="background:#f7c94820;color:var(--a1);">Java</span>
+            <span class="pill" style="background:#f7c94820;color:var(--a1);">HTML / CSS</span>
+            <span class="pill" style="background:#f7c94820;color:var(--a1);">Algorithmes</span>
+            <span class="pill" style="background:#f7c94820;color:var(--a1);">Tests & debug</span>
+          </div>
+          <span class="sae-badge"></span>
+        </div>
+
+        <div class="comp-card" style="border-color:#6bcfff28;">
+          <div class="comp-num">Compétence 2</div>
+          <div class="comp-icon" style="background:#6bcfff18;">⚡</div>
+          <h3>Optimiser des applications informatiques</h3>
+          <p>Proposer des applications optimisées selon des critères de temps d'exécution, précision et consommation de ressources, en choisissant structures de données et algorithmes adaptés.</p>
+          <div class="pills">
+            <span class="pill" style="background:#6bcfff20;color:var(--a3);">Dichotomie</span>
+            <span class="pill" style="background:#6bcfff20;color:var(--a3);">Indexation</span>
+            <span class="pill" style="background:#6bcfff20;color:var(--a3);">Structures de données</span>
+          </div>
+          <span class="sae-badge"></span>
+        </div>
+
+        <div class="comp-card" style="border-color:#ff6b6b28;">
+          <div class="comp-num">Compétence 3</div>
+          <div class="comp-icon" style="background:#ff6b6b18;">🖥️</div>
+          <h3>Administrer des systèmes informatiques communicants complexes</h3>
+          <p>Installer, configurer et maintenir en conditions opérationnelles des infrastructures et services, en maîtrisant les systèmes d'exploitation et outils de développement.</p>
+          <div class="pills">
+            <span class="pill" style="background:#ff6b6b20;color:var(--a2);">Debian 13</span>
+            <span class="pill" style="background:#ff6b6b20;color:var(--a2);">KDE / Plasma</span>
+            <span class="pill" style="background:#ff6b6b20;color:var(--a2);">Snap / Flatpak</span>
+            <span class="pill" style="background:#ff6b6b20;color:var(--a2);">JDK / Git</span>
+          </div>
+          <span class="sae-badge"></span>
+        </div>
+
+        <div class="comp-card" style="border-color:#a8ff7828;">
+          <div class="comp-num">Compétence 4</div>
+          <div class="comp-icon" style="background:#a8ff7818;">🗄️</div>
+          <h3>Gérer des données de l'information</h3>
+          <p>Concevoir, administrer et exploiter des bases de données relationnelles pour mettre à disposition les informations nécessaires au pilotage d'une organisation.</p>
+          <div class="pills">
+            <span class="pill" style="background:#a8ff7820;color:var(--a4);">PostgreSQL</span>
+            <span class="pill" style="background:#a8ff7820;color:var(--a4);">DBeaver</span>
+            <span class="pill" style="background:#a8ff7820;color:var(--a4);">MCD / MLD</span>
+            <span class="pill" style="background:#a8ff7820;color:var(--a4);">SQL avancé</span>
+          </div>
+          <span class="sae-badge"></span>
+        </div>
+
+        <div class="comp-card" style="border-color:#c084fc28;">
+          <div class="comp-num">Compétence 5</div>
+          <div class="comp-icon" style="background:#c084fc18;">📋</div>
+          <h3>Conduire un projet</h3>
+          <p>Satisfaire les besoins des utilisateurs en organisant et pilotant un projet informatique avec des méthodes classiques ou agiles, en respectant les délais et en communiquant efficacement.</p>
+          <div class="pills">
+            <span class="pill" style="background:#c084fc20;color:var(--a5);">Gestion délais</span>
+            <span class="pill" style="background:#c084fc20;color:var(--a5);">Recueil besoins</span>
+            <span class="pill" style="background:#c084fc20;color:var(--a5);">Documentation</span>
+            <span class="pill" style="background:#c084fc20;color:var(--a5);">Planification</span>
+          </div>
+          <span class="sae-badge"></span>
+        </div>
+
+        <div class="comp-card" style="border-color:#fb923c28;">
+          <div class="comp-num">Compétence 6</div>
+          <div class="comp-icon" style="background:#fb923c18;">🤝</div>
+          <h3>Travailler dans une équipe informatique</h3>
+          <p>Acquérir et exploiter les aptitudes nécessaires pour collaborer efficacement dans une équipe pluridisciplinaire : communication, répartition du travail et contribution selon ses points forts.</p>
+          <div class="pills">
+            <span class="pill" style="background:#fb923c20;color:var(--a6);">Travail en équipe</span>
+            <span class="pill" style="background:#fb923c20;color:var(--a6);">Communication</span>
+            <span class="pill" style="background:#fb923c20;color:var(--a6);">Partage de code</span>
+            <span class="pill" style="background:#fb923c20;color:var(--a6);">Adaptabilité</span>
+          </div>
+          <span class="sae-badge"></span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <footer>Portfolio BUT Informatique — Fait par Rahmi Bouchra</footer>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!--              PAGE CONTACT                   -->
+<!-- ════════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="full-page">
+    <div class="wrap">
+      <button class="back-btn" onclick="showPage('home')">← Retour à l'accueil</button>
+      <div class="label">Me joindre</div>
+      <h1>Me <span>contacter</span></h1>
+      <p class="sub">Une question, une opportunité de stage ou d'alternance ? N'hésite pas à m'écrire.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+
+          <a href="mailto:bouchra.rahmi@etu.univ-grenoble-alpes.fr" class="ci">
+            <div class="ci-ico" style="background:#f7c94818;">✉️</div>
+            <div><strong>Email universitaire</strong>
+              <span>bouchra.rahmi@etu.univ-grenoble-alpes.fr</span></div>
+          </a>
+
+          <div class="ci" style="cursor:default;">
+            <div class="ci-ico" style="background:#c084fc18;">📍</div>
+            <div><strong>Localisation</strong><span>Grenoble, France</span></div>
+          </div>
+
+          <div class="dispo">
+            Je suis en <strong>BUT Informatique</strong> et ouvert à des opportunités de <em>stage ou d'alternance</em>. N'hésite pas à me contacter !
+          </div>
+
+        </div>
+
+        <form class="cform" action="https://formspree.io/f/mzdoqove" method="post">
+  <p class="cform-title">Envoyer un message</p>
+  <div class="fg"><label>Nom</label><input type="text" name="nom" placeholder="Votre nom" required/></div>
+  <div class="fg"><label>Email</label><input type="email" name="email" placeholder="exemple@email.com" required/></div>
+  <div class="fg"><label>Sujet</label><input type="text" name="sujet" placeholder="Objet de votre message"/></div>
+  <div class="fg"><label>Message</label><textarea name="msg" placeholder="Écrivez votre message ici..." required></textarea></div>
+  <button type="submit" class="btn-send">Envoyer ✉️</button>
+</form>
+      </div>
+    </div>
+  </div>
+  <footer>Portfolio BUT Informatique — Fait par Rahmi Bouchra</footer>
+</div>
+
+<script>
+  // ── Navigation entre pages ──
+  function showPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+    document.getElementById('page-' + id).classList.add('active');
+    document.getElementById('nav-' + id).classList.add('active');
+    window.scrollTo(0, 0);
+  }
+
+  // ── Sur la page accueil : highlight nav selon la section visible ──
+  const homeSections = [
+    { id: 'section-hero',        nav: 'nav-home' },
+    { id: 'section-projets',     nav: 'nav-projets' },
+    { id: 'section-competences', nav: 'nav-competences' },
+    { id: 'section-contact',     nav: 'nav-contact' },
+  ];
+
+  function updateHomeNav() {
+    // Seulement si on est sur la page accueil
+    if (!document.getElementById('page-home').classList.contains('active')) return;
+
+    let current = homeSections[0].nav;
+    homeSections.forEach(s => {
+      const el = document.getElementById(s.id);
+      if (el && window.scrollY >= el.offsetTop - 130) {
+        current = s.nav;
+      }
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+    document.getElementById(current).classList.add('active');
+  }
+
+  window.addEventListener('scroll', updateHomeNav);
+
+  // Init
+  showPage('home');
+  updateHomeNav();
+
+  // ── Formulaire ──
+  function handleSend() {
+    const nom = document.getElementById('nom').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const msg = document.getElementById('msg').value.trim();
+    if (!nom || !email || !msg) {
+      alert('Merci de remplir au moins ton nom, ton email et ton message.');
+      return;
+    }
+    document.getElementById('confirm').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
