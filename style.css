@@ -203,6 +203,14 @@ nav {
   background: #252525;
   color: var(--text);
 }
+.comp {
+  font-size: 0.71rem;
+  padding: 0.18rem 0.55rem;
+  border-radius: 20px;
+  font-weight: 600;
+  background: #252525;
+  color: var(--text);
+}
 
 .dbox {
   background: #1c1c1c;
